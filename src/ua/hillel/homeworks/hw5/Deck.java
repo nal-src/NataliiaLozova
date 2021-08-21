@@ -3,10 +3,10 @@ package ua.hillel.homeworks.hw5;
 import java.util.Random;
 
 public class Deck {
-    private String[] cardValues = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
-    private String[] cardSuits = {"Hearts", "Clubs", "Diamonds", "Spades"};
-    private static int numOfCards = 52;
-    private static Card[] cards =  new Card[numOfCards];
+    private final String[] cardValues = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+    private final String[] cardSuits = {"Hearts", "Clubs", "Diamonds", "Spades"};
+    private static final int numOfCards = 52;
+    private static final Card[] cards =  new Card[numOfCards];
 
     public Deck() {
         create();
