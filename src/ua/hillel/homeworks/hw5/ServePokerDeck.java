@@ -4,15 +4,14 @@ public class ServePokerDeck {
     public int numOfPlayers;
 
     public ServePokerDeck(int numOfPlayers) {
-        if (numOfPlayers <= 10) {
-            this.numOfPlayers = numOfPlayers;
-        } else {
-            System.out.println("Max players 10");
-            System.exit(0);
-        }
+        this.numOfPlayers = numOfPlayers;
     }
 
     public void run() {
+        if (numOfPlayers > 10) {
+            throw new WrongNumberPlayers(" <= 10 players");
+        }
+
         Deck deck = new Deck();
         deck.shuffle();
         Card[] cards = deck.getCards();

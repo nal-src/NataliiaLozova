@@ -1,8 +1,8 @@
 package ua.hillel.homeworks.hw5;
 
 public class Card {
-    private String suit;
-    private String value;
+    private final String suit;
+    private final String value;
 
     public Card(String suit, String value) {
         this.suit = suit;
