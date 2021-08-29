@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="HoweWork11" verbose="1" >
+    <test name="Login">
+        <classes>
+            <class name="ua.hillel.test.hw11.Task3Test">
+                <parameter name="version" value="0.25.11.77" />
+                <parameter name="url" value="https://dev.site.com" />
+            </class>
+        </classes>
+    </test>
+</suite>

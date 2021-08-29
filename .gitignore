@@ -3,3 +3,4 @@ src/main/java/ua/hillel/lessons
 src/main/java/ua/hillel/homeworks/test
 out
 .DS_Store
+target/**
