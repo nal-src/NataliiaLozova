@@ -12,7 +12,7 @@ public class DragAndDropTest extends BaseUITest {
         driver.get("https://crossbrowsertesting.github.io/drag-and-drop.html");
         WebElement draggable = driver.findElement(By.id("draggable"));
         WebElement droppable = driver.findElement(By.id("droppable"));
-        actions().dragAndDrop(draggable, droppable).perform();
+        actions.dragAndDrop(draggable, droppable).perform();
 
         Assert.assertEquals(droppable.getText().trim(), "Dropped!");
     }

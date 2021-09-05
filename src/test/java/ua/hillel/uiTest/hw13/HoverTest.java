@@ -13,7 +13,7 @@ public class HoverTest extends BaseUITest {
         driver.get("https://the-internet.herokuapp.com/hovers");
         List<WebElement> avatars = driver.findElements(By.cssSelector("div.example > div.figure"));
         for (WebElement avatar : avatars) {
-            actions().moveToElement(avatar).perform();
+            actions.moveToElement(avatar).perform();
             String text = avatar.findElement(By.cssSelector("div.figcaption > h5")).getText();
             String username = text.replace("name:", "");
             System.out.println(username);
