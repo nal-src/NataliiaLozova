@@ -11,11 +11,11 @@ public class HoverMenuTest extends BaseUITest {
     public void checkLoadSecondaryPageAfterClickTest() {
         driver.get("https://crossbrowsertesting.github.io/hover-menu.html");
         WebElement dropDownElement = driver.findElement(By.cssSelector("ul.nav.navbar-nav > li.dropdown"));
-        actions().moveToElement(dropDownElement).perform();
+        actions.moveToElement(dropDownElement).perform();
 
         WebElement secondaryMenu = driver.findElement(By.partialLinkText("Secondary Menu"));
 
-        actions().moveToElement(secondaryMenu).perform();
+        actions.moveToElement(secondaryMenu).perform();
 
         WebElement secondaryActionLink = driver.findElement(By.partialLinkText("Secondary Action"));
         secondaryActionLink.click();
