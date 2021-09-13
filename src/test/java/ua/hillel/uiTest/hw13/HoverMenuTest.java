@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ua.hillel.uiTest.common.BaseUITest;
+import ua.hillel.uiTest.common.BaseUITestWithoutPageObject;
 
-public class HoverMenuTest extends BaseUITest {
+public class HoverMenuTest extends BaseUITestWithoutPageObject {
     @Test
     public void checkLoadSecondaryPageAfterClickTest() {
         driver.get("https://crossbrowsertesting.github.io/hover-menu.html");
