@@ -16,12 +16,6 @@ public class BasePage {
         wait = new WebDriverWait(driver, 10);
     }
 
-    public void setT(WebDriver driver) {
-        this.driver = driver;
-        actions = new Actions(driver);
-        wait = new WebDriverWait(driver, 10);
-    }
-
     protected void setValue(WebElement element, String value) {
         element.clear();
         element.sendKeys(value);
