@@ -7,7 +7,7 @@ import ua.hillel.uiTest.common.BaseUITest;
 public class GeoLocationTest extends BaseUITest {
     @Test
     public void getLocationTest(){
-        GeolocationPage geolocationPage = mainPage()
+        GeolocationPage geolocationPage = goToMainPage()
                 .switchToGeolocationPage()
                 .clickButton();
         System.out.println("Latitude : " + geolocationPage.getLatValue());

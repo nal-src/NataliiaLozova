@@ -8,7 +8,7 @@ import ua.hillel.uiTest.common.BaseUITest;
 public class LoginTest extends BaseUITest {
     @Test
     public void loginSuccessTest() {
-          String textSuccess = mainPage()
+          String textSuccess = goToMainPage()
                   .switchToLoginPage()
                   .setUserName("tomsmith")
                   .setPassword("SuperSecretPassword!")
@@ -19,7 +19,7 @@ public class LoginTest extends BaseUITest {
 
     @Test
     public void loginFailureTest() {
-        LoginPage loginPage = mainPage()
+        LoginPage loginPage = goToMainPage()
                 .switchToLoginPage()
                 .setUserName("zero75")
                 .setPassword("SuperSecretPassword!");

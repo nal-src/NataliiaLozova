@@ -41,7 +41,7 @@ public class BaseUITest {
         driver.quit();
     }
 
-    protected MainPage mainPage() {
+    protected MainPage goToMainPage() {
         return new MainPage(driver).load();
     }
 

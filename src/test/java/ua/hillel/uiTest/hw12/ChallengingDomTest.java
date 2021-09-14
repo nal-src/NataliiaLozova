@@ -8,7 +8,7 @@ import java.util.List;
 public class ChallengingDomTest extends BaseUITest {
     @Test
     public void clickElements() {
-        List<String> values = mainPage()
+        List<String> values = goToMainPage()
                 .switchToChallengingDomPage()
                 .getTextFromFourthColumnAfterClickButtons();
 

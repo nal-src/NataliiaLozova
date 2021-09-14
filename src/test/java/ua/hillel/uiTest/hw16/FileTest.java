@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 public class FileTest extends BaseUITest {
     @Test
     public void downloadAndUploadTest() {
-        MainPage mainPage = mainPage();
+        MainPage mainPage = goToMainPage();
         String fileName = mainPage
                 .switchToFileDownloadPage()
                 .downloadRandomTextFileAndReturnName();
