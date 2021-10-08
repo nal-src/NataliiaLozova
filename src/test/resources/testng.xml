@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="HoweWork19" verbose="1" >
+    <test name="UI test">
+        <packages>
+            <package name="ua.hillel.uiTest.hw12"/>
+        </packages>
+    </test>
+</suite>
