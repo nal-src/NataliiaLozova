@@ -1,6 +1,6 @@
 .idea
 src/main/java/ua/hillel/lessons
-src/main/java/ua/hillel/homeworks/test
+src/main/java/ua/hillel/lessons/l27
 out
 .DS_Store
 target/**
